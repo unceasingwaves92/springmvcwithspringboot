@@ -1,0 +1,30 @@
+server:
+  port: 9095
+
+spring:
+  application:
+    name: spring-mvc-withspringboot
+  datasource:
+    driverClassName: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: system
+    password: nedumaran@86
+  thymeleaf:
+    template-loader-path: classpath:/templates
+    suffix: .html
+    cache: false
+
+logging:
+  level:
+    org:
+      springframework: info
+    com:
+      springmvcwithspringboot: debug
+
+  file:
+    name: C:/Users/Dell/IdeaProjects/springmvcwithspringboot/springmvcwithspringboot/spring-mvc-withspringboot.log
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+
+
+
